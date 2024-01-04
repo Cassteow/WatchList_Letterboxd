@@ -19,7 +19,7 @@ pymongo_user = st.secrets['pymongo_user']
 
 
 client = pymongo.MongoClient(pymongo_user)
-db = client["TheMovieDatabase"]
+db = client.TheMovieDatabase
 
 
 # Function to get dataframe of DB from PyMongo Collection
